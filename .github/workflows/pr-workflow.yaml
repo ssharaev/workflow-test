@@ -1,4 +1,6 @@
 name: PR workflow
+permissions:
+  checks: write
 on:
   pull_request:
     types: [synchronize]

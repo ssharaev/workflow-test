@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cc935b2-29a5-4928-a03e-1096e292b33a" name="Changes" comment="add test">
-      <change beforePath="$PROJECT_DIR$/.github/pr-workflow.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pr-workflow.yaml" afterDir="false" />
+    <list default="true" id="8cc935b2-29a5-4928-a03e-1096e292b33a" name="Changes" comment="break test">
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssharaev/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssharaev/AppTest.java" afterDir="false" />
+    </list>
+    <list id="f0fedec8-288d-4a7a-b4c5-0efe9b98adad" name="not commit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +245,56 @@
       <option name="project" value="LOCAL" />
       <updated>1676812542226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add test 2">
+      <created>1676812919631</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676812919631</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add test 3">
+      <created>1676813048208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676813048208</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add pulling repo to workflow">
+      <created>1676813259892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676813259892</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change reporting step">
+      <created>1676813640951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676813640951</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add h2 database">
+      <created>1676814115999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814115999</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add new test">
+      <created>1676814292533</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814292533</updated>
+    </task>
+    <task id="LOCAL-00009" summary="break test">
+      <created>1676814509242</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814509242</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +303,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test" />
+    <MESSAGE value="add test 2" />
+    <MESSAGE value="add test 3" />
+    <MESSAGE value="add pulling repo to workflow" />
+    <MESSAGE value="change reporting step" />
+    <MESSAGE value="add h2 database" />
+    <MESSAGE value="add new test" />
+    <MESSAGE value="break test" />
+    <option name="LAST_COMMIT_MESSAGE" value="break test" />
   </component>
 </project>
