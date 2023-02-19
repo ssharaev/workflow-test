@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cc935b2-29a5-4928-a03e-1096e292b33a" name="Changes" comment="break test">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssharaev/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssharaev/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8cc935b2-29a5-4928-a03e-1096e292b33a" name="Changes" comment="push one more" />
     <list id="f0fedec8-288d-4a7a-b4c5-0efe9b98adad" name="not commit" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -294,7 +292,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676814509242</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add permissions">
+      <created>1676814676008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814676008</updated>
+    </task>
+    <task id="LOCAL-00011" summary="push one more">
+      <created>1676814813762</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814813762</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +322,8 @@
     <MESSAGE value="add h2 database" />
     <MESSAGE value="add new test" />
     <MESSAGE value="break test" />
-    <option name="LAST_COMMIT_MESSAGE" value="break test" />
+    <MESSAGE value="add permissions" />
+    <MESSAGE value="push one more" />
+    <option name="LAST_COMMIT_MESSAGE" value="push one more" />
   </component>
 </project>
