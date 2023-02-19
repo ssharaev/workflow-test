@@ -18,4 +18,9 @@ class AppTest {
     void simpleTest() {
         assertThat("1").isEqualTo("1");
     }
+
+    @Test
+    void simpleTest2() {
+        assertThat("1").isEqualTo("1");
+    }
 }
