@@ -18,4 +18,10 @@ class AppTest {
 
     }
 
+    @Test
+    void simpleTest2() {
+        assertThat("1").isEqualTo("1");
+
+    }
+
 }
