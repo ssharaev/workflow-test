@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Pulling BE repository
+        uses: actions/checkout@v2
+
       - name: Cache local Maven repository
         uses: actions/cache@v3
         with:
