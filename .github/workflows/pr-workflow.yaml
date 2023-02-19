@@ -1,7 +1,7 @@
 name: PR workflow
 on:
   pull_request:
-    types: [created, synchronize]
+    types: [opened, synchronize]
 
 jobs:
   build_and_test:
