@@ -32,4 +32,10 @@ class AppTest {
 
     }
 
+    @Test
+    void simpleTest4() {
+        assertThat("1").isEqualTo("1");
+
+    }
+
 }
