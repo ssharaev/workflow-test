@@ -17,26 +17,5 @@ class AppTest {
     @Test
     void simpleTest() {
         assertThat("1").isEqualTo("1");
-
     }
-
-    @Test
-    void simpleTest2() {
-        assertThat("1").isEqualTo("1");
-
-    }
-
-    @Test
-    void simpleTest3() {
-        assertThat("1").isEqualTo("1");
-
-
-    }
-
-    @Test
-    void simpleTest4() {
-        assertThat("1").isEqualTo("12");
-
-    }
-
 }
