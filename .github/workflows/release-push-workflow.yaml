@@ -23,7 +23,7 @@ jobs:
         run: |
           git fetch 'origin'
           git switch develop
-          if ! git merge --no-ff $GITHUB_REF > /dev/null; 
+          if ! git merge --no-ff --allow-unrelated-histories $GITHUB_REF > /dev/null; 
           then echo "merge-develop-error=true" >> $GITHUB_OUTPUT; 
           fi
 
