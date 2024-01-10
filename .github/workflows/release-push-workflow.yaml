@@ -23,5 +23,5 @@ jobs:
         run: |
           git fetch 'origin'
           git switch develop
-          git merge --allow-unrelated-histories $GITHUB_REF
+          git merge --no-ff --allow-unrelated-histories $GITHUB_REF
           git push origin develop
