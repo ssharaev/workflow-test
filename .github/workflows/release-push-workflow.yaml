@@ -30,14 +30,14 @@ jobs:
       - name: Add develop summary
         if: ${{ success() && steps.merge-develop.outputs.merge-develop-error }}
         run: |
-          echo ":exclamation: **tip-service-${{ env.REPOSITORY }}** : Unable to merge ${{ env.REF_BRANCH }} branch into develop" >> $GITHUB_STEP_SUMMARY
+          echo ":exclamation: Unable to merge $GITHUB_REF branch into develop" >> $GITHUB_STEP_SUMMARY
 
       - name: Mark failed
         if: ${{ steps.merge-master.outputs.merge-master-error || steps.merge-develop.outputs.merge-develop-error }}
         uses: actions/github-script@v3
         with:
           script: |
-            core.setFailed('Unable to merge ${{ env.REF_BRANCH }} in repo tip-service-${{ env.REPOSITORY }}')
+            core.setFailed('Unable to merge $GITHUB_REF')
 
       - name: Push develop
         if: ${{ success() && !(steps.merge-develop.outputs.merge-develop-error) }}
