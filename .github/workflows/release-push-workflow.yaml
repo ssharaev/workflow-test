@@ -22,7 +22,7 @@ jobs:
         id: merge-develop
         run: |
           git switch develop
-          if ! git merge --no-ff ${{ GITHUB_REF }} > /dev/null; 
+          if ! git merge --no-ff $GITHUB_REF > /dev/null; 
           then echo "merge-develop-error=true" >> $GITHUB_OUTPUT; 
           fi
 
