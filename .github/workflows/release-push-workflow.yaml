@@ -23,23 +23,5 @@ jobs:
         run: |
           git fetch 'origin'
           git switch develop
-          if ! git merge --no-ff --allow-unrelated-histories $GITHUB_REF > /dev/null; 
-          then echo "merge-develop-error=true" >> $GITHUB_OUTPUT; 
-          fi
-
-      - name: Add develop summary
-        if: ${{ success() && steps.merge-develop.outputs.merge-develop-error }}
-        run: |
-          echo ":exclamation: Unable to merge $GITHUB_REF branch into develop" >> $GITHUB_STEP_SUMMARY
-
-      - name: Mark failed
-        if: ${{ steps.merge-develop.outputs.merge-develop-error }}
-        uses: actions/github-script@v3
-        with:
-          script: |
-            core.setFailed('Unable to merge $GITHUB_REF')
-
-      - name: Push develop
-        if: ${{ success() && !(steps.merge-develop.outputs.merge-develop-error) }}
-        run: |
+          git merge --allow-unrelated-histories $GITHUB_REF
           git push origin develop
