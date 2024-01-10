@@ -12,9 +12,34 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
 
-      - name: Merge release -> develop
-        uses: devmasx/merge-branch@master
+      - name: Setup git config
+        run: |
+          # setup the username and email.
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "<>"
+
+      - name: Merge release branch into master
+        id: merge-develop
+        run: |
+          git switch develop
+          if ! git merge --no-ff ${{ GITHUB_REF }} > /dev/null; 
+          then echo "merge-develop-error=true" >> $GITHUB_OUTPUT; 
+          fi
+
+      - name: Add develop summary
+        if: ${{ success() && steps.merge-develop.outputs.merge-develop-error }}
+        run: |
+          echo ":exclamation: **tip-service-${{ env.REPOSITORY }}** : Unable to merge ${{ env.REF_BRANCH }} branch into develop" >> $GITHUB_STEP_SUMMARY
+
+      - name: Mark failed
+        if: ${{ steps.merge-master.outputs.merge-master-error || steps.merge-develop.outputs.merge-develop-error }}
+        uses: actions/github-script@v3
         with:
-          type: now
-          target_branch: uat
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            core.setFailed('Unable to merge ${{ env.REF_BRANCH }} in repo tip-service-${{ env.REPOSITORY }}')
+
+      - name: Push develop
+        if: ${{ success() && !(steps.merge-develop.outputs.merge-develop-error) }}
+        run: |
+          git switch develop
+          git push origin develop
