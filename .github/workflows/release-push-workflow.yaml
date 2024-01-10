@@ -33,7 +33,7 @@ jobs:
           echo ":exclamation: Unable to merge $GITHUB_REF branch into develop" >> $GITHUB_STEP_SUMMARY
 
       - name: Mark failed
-        if: ${{ steps.merge-master.outputs.merge-master-error || steps.merge-develop.outputs.merge-develop-error }}
+        if: ${{ steps.merge-develop.outputs.merge-develop-error }}
         uses: actions/github-script@v3
         with:
           script: |
