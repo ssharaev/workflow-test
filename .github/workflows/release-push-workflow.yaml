@@ -18,10 +18,10 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "<>"
 
-      - name: Merge release branch into master
+      - name: Merge release branch into develop
         id: merge-develop
         run: |
-          git switch develop
+          checkout --progress --force -B develop refs/remotes/origin/develop
           if ! git merge --no-ff $GITHUB_REF > /dev/null; 
           then echo "merge-develop-error=true" >> $GITHUB_OUTPUT; 
           fi
